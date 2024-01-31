@@ -8,7 +8,7 @@ class Config(object):
     TOKEN = "6713160483:AAGgrbbljK05FwaOxwJ0pTs4o1kcZNL0024"
     mongo_url = "mongodb+srv://memek:memek@cluster0.xktxnyr.mongodb.net/?retryWrites=true&w=majority"
     PHOTO_URL = ["https://telegra.ph/file/b925c3985f0f325e62e17.jpg", "https://telegra.ph/file/4211fb191383d895dab9d.jpg"]
-    SUPPORT_CHAT = "tgcanimecommunity"
+    SUPPORT_CHAT = "gcanimecommunity"
     UPDATE_CHAT = "Origanimeinfo"
     BOT_USERNAME = "ciliksmall9bot"
     CHARA_CHANNEL_ID = "-1002124487227"
