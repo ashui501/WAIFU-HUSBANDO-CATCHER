@@ -10,7 +10,7 @@ class Config(object):
     PHOTO_URL = ["https://telegra.ph/file/b925c3985f0f325e62e17.jpg", "https://telegra.ph/file/4211fb191383d895dab9d.jpg"]
     SUPPORT_CHAT = "gcanimecommunity"
     UPDATE_CHAT = "Origanimeinfo"
-    BOT_USERNAME = "ciliksmall9bot"
+    BOT_USERNAME = "AnimeharemindoBot"
     CHARA_CHANNEL_ID = "-1002124487227"
     api_id = 26626068
     api_hash = "bf423698bcbe33cfd58b11c78c42caa2"
