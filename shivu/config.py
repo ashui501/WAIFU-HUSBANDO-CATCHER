@@ -5,8 +5,8 @@ class Config(object):
     OWNER_ID = "6649432492"
     sudo_users = "6649432492", "5843270062"
     GROUP_ID = -1002015833205
-    TOKEN = "6713160483:AAFewv6EyBO0DXWhm8gbrL9sAJar54tDlmM"
-    mongo_url = "mongodb+srv://memek:memek@cluster0.xktxnyr.mongodb.net/?retryWrites=true&w=majority"
+    TOKEN = "6986798294:AAEd0nFY9mYtz2dygrGJ39alZGy4QPvXejQ"
+    mongo_url = "mongodb+srv://public:abishnoimf@cluster0.rqk6ihd.mongodb.net/?retryWrites=true&w=majority"
     PHOTO_URL = ["https://telegra.ph/file/43345aa900233f7649309.jpg", "https://telegra.ph/file/ee98b297887d361544b3c.jpg"]
     SUPPORT_CHAT = "gcanimecommunity"
     UPDATE_CHAT = "Origanimeinfo"
