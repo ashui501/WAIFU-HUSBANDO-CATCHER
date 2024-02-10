@@ -4,7 +4,7 @@ class Config(object):
     # Get this value from my.telegram.org/apps
     OWNER_ID = "6649432492"
     sudo_users = "6649432492", "5843270062"
-    GROUP_ID = -100212448722
+    GROUP_ID = -1002015833205
     TOKEN = "6713160483:AAFewv6EyBO0DXWhm8gbrL9sAJar54tDlmM"
     mongo_url = "mongodb+srv://memek:memek@cluster0.xktxnyr.mongodb.net/?retryWrites=true&w=majority"
     PHOTO_URL = ["https://telegra.ph/file/43345aa900233f7649309.jpg", "https://telegra.ph/file/ee98b297887d361544b3c.jpg"]
