@@ -57,8 +57,8 @@ async def trade(client, message):
     
     keyboard = InlineKeyboardMarkup(
         [
-            [InlineKeyboardButton("Confirm Trade", callback_data="confirm_trade")],
-            [InlineKeyboardButton("Cancel Trade", callback_data="cancel_trade")]
+            [InlineKeyboardButton("✅ Confirm Trade", callback_data="confirm_trade")],
+            [InlineKeyboardButton("❌ Cancel Trade", callback_data="cancel_trade")]
         ]
     )
 
@@ -159,8 +159,8 @@ async def gift(client, message):
     
     keyboard = InlineKeyboardMarkup(
         [
-            [InlineKeyboardButton("Confirm Gift", callback_data="confirm_gift")],
-            [InlineKeyboardButton("Cancel Gift", callback_data="cancel_gift")]
+            [InlineKeyboardButton("✅ Confirm Gift", callback_data="confirm_gift")],
+            [InlineKeyboardButton("✅ Cancel Gift", callback_data="cancel_gift")]
         ]
     )
 
