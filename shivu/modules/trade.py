@@ -159,8 +159,8 @@ async def gift(client, message):
     
     keyboard = InlineKeyboardMarkup(
         [
-            [InlineKeyboardButton("✅ Confirm Gift", callback_data="confirm_gift")],
-            [InlineKeyboardButton("✅ Cancel Gift", callback_data="cancel_gift")]
+            [InlineKeyboardButton("Confirm Gift", callback_data="confirm_gift")],
+            [InlineKeyboardButton("Cancel Gift", callback_data="cancel_gift")]
         ]
     )
 
