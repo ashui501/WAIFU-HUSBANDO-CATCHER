@@ -53,7 +53,7 @@ async def start(update: Update, context: CallbackContext) -> None:
             [InlineKeyboardButton("✩𝚂𝚄𝙿𝙿𝙾𝚁𝚃✩", url=f'https://t.me/{SUPPORT_CHAT}'),
             InlineKeyboardButton("✪𝚄𝙿𝙳𝙰𝚃𝙴𝚂✪", url=f'https://t.me/{UPDATE_CHAT}')],
             [InlineKeyboardButton("★𝙷𝙴𝙻𝙿★", callback_data='help')],
-            [InlineKeyboardButton("▣𝙲𝚁𝙴𝙳𝙸𝚃𝚂▣", url=f'https://youtu.be/wVmZD4pZ9PE?si=O-IYueqYo880JVTG')]
+            [InlineKeyboardButton("▣𝙲𝚁𝙴𝙳𝙸𝚃𝚂▣", url=f'https://telegra.ph/OUR-DEVELOPING-AND-SUPPORT-TEAM-03-01')]
         ]
         reply_markup = InlineKeyboardMarkup(keyboard)
         photo_url = random.choice(PHOTO_URL)
@@ -67,7 +67,7 @@ async def start(update: Update, context: CallbackContext) -> None:
             [InlineKeyboardButton("✩𝚂𝚄𝙿𝙿𝙾𝚁𝚃✩", url=f'https://t.me/{SUPPORT_CHAT}'),
             InlineKeyboardButton("✪𝚄𝙿𝙳𝙰𝚃𝙴𝚂✪", url=f'https://t.me/{UPDATE_CHAT}')],
             [InlineKeyboardButton("★𝙷𝙴𝙻𝙿★", callback_data='help')],
-            [InlineKeyboardButton("▣𝙲𝚁𝙴𝙳𝙸𝚃𝚂▣", url=f'https://youtu.be/wVmZD4pZ9PE?si=O-IYueqYo880JVTG')]
+            [InlineKeyboardButton("▣𝙲𝚁𝙴𝙳𝙸𝚃𝚂▣", url=f'https://telegra.ph/OUR-DEVELOPING-AND-SUPPORT-TEAM-03-01')]
         ]
         
         reply_markup = InlineKeyboardMarkup(keyboard)
@@ -119,7 +119,7 @@ async def button(update: Update, context: CallbackContext) -> None:
             [InlineKeyboardButton("✩𝚂𝚄𝙿𝙿𝙾𝚁𝚃✩", url=f'https://t.me/{SUPPORT_CHAT}'),
             InlineKeyboardButton("✪𝚄𝙿𝙳𝙰𝚃𝙴𝚂✪", url=f'https://t.me/{UPDATE_CHAT}')],
             [InlineKeyboardButton("★𝙷𝙴𝙻𝙿★", callback_data='help')],
-            [InlineKeyboardButton("▣𝙲𝚁𝙴𝙳𝙸𝚃𝚂▣", url=f'https://youtu.be/wVmZD4pZ9PE?si=O-IYueqYo880JVTG')]
+            [InlineKeyboardButton("▣𝙲𝚁𝙴𝙳𝙸𝚃𝚂▣", url=f'https://telegra.ph/OUR-DEVELOPING-AND-SUPPORT-TEAM-03-01')]
         ]
         reply_markup = InlineKeyboardMarkup(keyboard)
 
