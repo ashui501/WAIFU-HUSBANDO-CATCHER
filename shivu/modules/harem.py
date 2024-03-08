@@ -136,7 +136,7 @@ async def harem_callback(update: Update, context: CallbackContext) -> None:
 
 
 
-application.add_handler(CommandHandler(["myharem", "collection"], harem,block=False))
+application.add_handler(CommandHandler(["myharem", "collection", "harem"], harem,block=False))
 harem_handler = CallbackQueryHandler(harem_callback, pattern='^myharem', block=False)
 application.add_handler(harem_handler)
     
