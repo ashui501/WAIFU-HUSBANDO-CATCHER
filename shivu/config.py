@@ -5,7 +5,7 @@ class Config(object):
     OWNER_ID = "6649432492"
     sudo_users = "6649432492", "5843270062", "5008662958"
     GROUP_ID = -1002015833205
-    TOKEN = "6986798294:AAEd0nFY9mYtz2dygrGJ39alZGy4QPvXejQ"
+    TOKEN = "6325135049:AAFSGBfpuBkMbzN2lTxwa8DxHZzwi8wurKk"
     mongo_url = "mongodb+srv://HaremDBBot:ThisIsPasswordForHaremDB@haremdb.swzjngj.mongodb.net/?retryWrites=true&w=majority"
     PHOTO_URL = ["https://telegra.ph/file/43345aa900233f7649309.jpg", "https://telegra.ph/file/ee98b297887d361544b3c.jpg"]
     SUPPORT_CHAT = "gcanimecommunity"
