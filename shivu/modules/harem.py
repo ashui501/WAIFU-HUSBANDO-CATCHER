@@ -164,9 +164,6 @@ async def harem_callback(update: Update, context: CallbackContext) -> None:
     await harem(update, context, page)
     
 
-RARITY_HANDLER = CommandHandler('rarity', rarity, block=False)
-application.add_handler(RARITY_HANDLER)
-application.add_handler(RARITY_CALLBACK_HANDLER)
 
 application.add_handler(CommandHandler(["myharem", "hharem"], harem,block=False))
 harem_handler = CallbackQueryHandler(harem_callback, pattern='^hharem', block=False)
