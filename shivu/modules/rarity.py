@@ -37,4 +37,3 @@ async def harem(update: Update, context: CallbackContext, page=0) -> None:
 
 RARITY_HANDLER = CommandHandler('rarity', rarity, block=False)
 application.add_handler(RARITY_HANDLER)
-application.add_handler(RARITY_CALLBACK_HANDLER)
