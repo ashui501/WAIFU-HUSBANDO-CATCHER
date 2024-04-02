@@ -35,12 +35,6 @@ async def harem(update: Update, context: CallbackContext, page=0) -> None:
     global selected_rarity
     # ... (isi fungsi harem Anda di sini, dengan modifikasi untuk memeriksa selected_rarity)
 
-RARITY_HANDLER = CommandHandler('rarity', rarity, block=False)
-RARITY_CALLBACK_HANDLER = CallbackQueryHandler(rarity_callback, pattern='^rarity', block=False)
-
-application.add_handler(RARITY_HANDLER)
-application.add_handler(RARITY_CALLBACK_HANDLER)
-
 
 from telegram.ext import CommandHandler, CallbackContext, CallbackQueryHandler
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup
@@ -168,9 +162,13 @@ async def harem_callback(update: Update, context: CallbackContext) -> None:
 
     
     await harem(update, context, page)
+    
 
+RARITY_HANDLER = CommandHandler('rarity', rarity, block=False)
+RARITY_CALLBACK_HANDLER = CallbackQueryHandler(rarity_callback, pattern='^rarity', block=False)
 
-
+application.add_handler(RARITY_HANDLER)
+application.add_handler(RARITY_CALLBACK_HANDLER)
 
 application.add_handler(CommandHandler(["myharem", "hharem"], harem,block=False))
 harem_handler = CallbackQueryHandler(harem_callback, pattern='^hharem', block=False)
