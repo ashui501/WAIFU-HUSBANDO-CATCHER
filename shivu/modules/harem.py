@@ -1,8 +1,46 @@
-from telegram import Update
+from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from itertools import groupby
 import math
 from html import escape 
 import random
+
+from telegram.ext import CommandHandler, CallbackContext, CallbackQueryHandler
+
+from shivu import collection, user_collection, application
+
+RARITY_MAP = {
+    "1": "⚪ Common",
+    "2": "🟣 Rare",
+    "3": "🟡 Legendary",
+    "4": "🟢 Medium",
+    "5": "💮 Limited",
+    "6": "🔮 Super Rare",
+    "7": "⚜️ Infinity Edition",
+    "8": "🏺 Legendary Edison"
+}
+
+selected_rarity = None
+
+async def rarity(update: Update, context: CallbackContext) -> None:
+    global selected_rarity
+    query = update.callback_query
+    data = query.data
+
+    _, rarity_key = data.split(':')
+    selected_rarity = RARITY_MAP[rarity_key]
+
+    await update.message.reply_text(f'Rarity dipilih: {selected_rarity}')
+
+async def harem(update: Update, context: CallbackContext, page=0) -> None:
+    global selected_rarity
+    # ... (isi fungsi harem Anda di sini, dengan modifikasi untuk memeriksa selected_rarity)
+
+RARITY_HANDLER = CommandHandler('rarity', rarity, block=False)
+RARITY_CALLBACK_HANDLER = CallbackQueryHandler(rarity_callback, pattern='^rarity', block=False)
+
+application.add_handler(RARITY_HANDLER)
+application.add_handler(RARITY_CALLBACK_HANDLER)
+
 
 from telegram.ext import CommandHandler, CallbackContext, CallbackQueryHandler
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup
@@ -42,14 +80,14 @@ async def harem(update: Update, context: CallbackContext, page=0) -> None:
     current_grouped_characters = {k: list(v) for k, v in groupby(current_characters, key=lambda x: x['anime'])}
 
     for anime, characters in current_grouped_characters.items():
-        harem_message += f'\n<b>⌬ {anime} 〔{len(characters)}/{await collection.count_documents({"anime": anime})}〕</b>\n'
+        harem_message += f'\n<b>{anime} {len(characters)}/{await collection.count_documents({"anime": anime})}</b>\n'
     
         
 
         for character in characters:
             
             count = character_counts[character['id']]  
-            harem_message += f'◈ ⌠{character["rarity"][0]}⌡ {character["id"]} {character["name"]} ⌠×{count}⌡\n'
+            harem_message += f'{character["rarity"]} {character["id"]} {character["name"]} ×{count}\n'
 
 
     total_count = len(user['characters'])
@@ -61,9 +99,9 @@ async def harem(update: Update, context: CallbackContext, page=0) -> None:
         
         nav_buttons = []
         if page > 0:
-            nav_buttons.append(InlineKeyboardButton("👈", callback_data=f"harem:{page-1}:{user_id}"))
+            nav_buttons.append(InlineKeyboardButton("⬅️", callback_data=f"harem:{page-1}:{user_id}"))
         if page < total_pages - 1:
-            nav_buttons.append(InlineKeyboardButton("👉", callback_data=f"harem:{page+1}:{user_id}"))
+            nav_buttons.append(InlineKeyboardButton("➡️", callback_data=f"harem:{page+1}:{user_id}"))
         keyboard.append(nav_buttons)
 
     reply_markup = InlineKeyboardMarkup(keyboard)
@@ -134,9 +172,8 @@ async def harem_callback(update: Update, context: CallbackContext) -> None:
 
 
 
-application.add_handler(CommandHandler(["myharem", "harem", "collection"], harem,block=False))
-harem_handler = CallbackQueryHandler(harem_callback, pattern='^myharem', block=False)
+application.add_handler(CommandHandler(["myharem", "hharem"], harem,block=False))
+harem_handler = CallbackQueryHandler(harem_callback, pattern='^hharem', block=False)
 application.add_handler(harem_handler)
     
 
-    
