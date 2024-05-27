@@ -30,7 +30,7 @@ async def get_next_sequence_number(sequence_name):
 
 async def upload(update: Update, context: CallbackContext) -> None:
     if str(update.effective_user.id) not in sudo_users:
-        await update.message.reply_text('Ask My Owner...')
+        await update.message.reply_text('Ask My Sensei...')
         return
 
     try:
@@ -74,7 +74,7 @@ async def upload(update: Update, context: CallbackContext) -> None:
             )
             character['message_id'] = message.message_id
             await collection.insert_one(character)
-            await update.message.reply_text('CHARACTER ADDED....')
+            await update.message.reply_text('CHARACTER ADDED SUCCESSFULLY....')
         except:
             await collection.insert_one(character)
             update.effective_message.reply_text("Character Added but no Database Channel Found, Consider adding one.")
@@ -84,7 +84,7 @@ async def upload(update: Update, context: CallbackContext) -> None:
 
 async def delete(update: Update, context: CallbackContext) -> None:
     if str(update.effective_user.id) not in sudo_users:
-        await update.message.reply_text('Ask my Owner to use this Command...')
+        await update.message.reply_text('Ask my Sensei to use this Command...')
         return
 
     try:
