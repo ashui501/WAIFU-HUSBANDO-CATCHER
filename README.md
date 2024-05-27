@@ -96,3 +96,7 @@ If you appreciate this Code, make sure to star ✨ the repository.
 ## Developer Suggestions 
 - Don't Use heroku. Deploy on Heroku is just for testing. Otherwise Bot's Inline will Work Too Slow.
 - Use a reliable VPS provider
+
+
+<p align="center"><a href="https://dashboard.heroku.com/new?template=https://github.com/ashui501/WAIFU-HUSBANDO-CATCHER"> <img 
+src="https://img.shields.io/badge/Deploy%20To%20Heroku-red?style=flat&logo=heroku" width="210" height="34.45" /></a></p>
