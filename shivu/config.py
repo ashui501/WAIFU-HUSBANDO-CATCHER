@@ -2,18 +2,18 @@ class Config(object):
     LOGGER = True
 
     # Get this value from my.telegram.org/apps
-    OWNER_ID = "6765826972"
+    OWNER_ID = "6534367642"
     sudo_users = "6845325416", "6765826972"
-    GROUP_ID = -1002133191051
-    TOKEN = ""
-    mongo_url = "mongodb+srv://HaremDBBot:ThisIsPasswordForHaremDB@haremdb.swzjngj.mongodb.net/?retryWrites=true&w=majority"
-    PHOTO_URL = ["https://telegra.ph/file/b925c3985f0f325e62e17.jpg", "https://telegra.ph/file/4211fb191383d895dab9d.jpg"]
-    SUPPORT_CHAT = "Collect_em_support"
-    UPDATE_CHAT = "Collect_em_support"
-    BOT_USERNAME = "Collect_Em_AllBot"
-    CHARA_CHANNEL_ID = "-1002133191051"
-    api_id = 26626068
-    api_hash = "bf423698bcbe33cfd58b11c78c42caa2"
+    GROUP_ID = -1002049314623
+    TOKEN = "7063220368:AAEty7C6Z0MrlmUpmPH81J-AhM7Jyum4oOI"
+    mongo_url = "mongodb+srv://tiwarireeta004:peqxLEd36RAg7ors@cluster0.furypd3.mongodb.net/?retryWrites=true&w=majority"
+    PHOTO_URL = ["https://graph.org/file/cb65e2e8ea675f4b494af.jpg", "https://graph.org/file/1e64d77e0bec543c39f45.jpg"]
+    SUPPORT_CHAT = "NAMIKAZECPAN"
+    UPDATE_CHAT = "NAMIKAZECPAN"
+    BOT_USERNAME = "GUESSEM_ALL_ROBOT"
+    CHARA_CHANNEL_ID = "-1002049314623"
+    api_id = 24074986
+    api_hash = "f4f6272a85d0e50e39a24cb378be118d"
 
     
 class Production(Config):
