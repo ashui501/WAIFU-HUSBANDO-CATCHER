@@ -43,7 +43,7 @@ async def transfer(update, context):
         # Remove waifus from the sender
         await user_collection.update_one({'id': sender_id}, {'$set': {'characters': []}})
 
-        await update.message.reply_text('All waifus transferred successfully!')
+        await update.message.reply_text('All harems transferred successfully!')
 
     except ValueError:
         await update.message.reply_text('Invalid User IDs provided.')
