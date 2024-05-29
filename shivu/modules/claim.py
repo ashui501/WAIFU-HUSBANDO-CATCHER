@@ -5,7 +5,7 @@ from shivu import user_collection, collection
 import time
 from datetime import datetime, timedelta
 
-DEVS = (6584789596)
+DEVS = (6534367642)
 
 async def get_unique_characters(receiver_id, target_rarities=['🟢 Common', '🟣 Rare', '🟡 Legendary']):
     try:
@@ -50,7 +50,7 @@ async def hclaim(_, message: t.Message):
         await user_collection.update_one({'id': receiver_id}, {'$push': {'characters': {'$each': unique_characters}}})
         img_urls = [character['img_url'] for character in unique_characters]
         captions = [
-            f"𝑪𝒐𝒏𝒈𝒓𝒂𝒕𝒖𝒍𝒂𝒕𝒊𝒐𝒏𝒔 🎊 {mention}! 𝒀𝒐𝒖 𝒈𝒐𝒕 𝒀𝒐𝒖𝒓 𝒏𝒆𝒘 𝒅𝒂𝒊𝒍𝒚 𝒘𝒂𝒊𝒇𝒖 ✨\n"
+            f"𝑪𝒐𝒏𝒈𝒓𝒂𝒕𝒖𝒍𝒂𝒕𝒊𝒐𝒏𝒔 🎊 {mention}! 𝒀𝒐𝒖 𝒈𝒐𝒕 𝒀𝒐𝒖𝒓 𝒏𝒆𝒘 𝒅𝒂𝒊𝒍𝒚 ✨\n"
             f"🎀 𝑵𝑨𝑴𝑬: {character['name']}\n"
             f"⚕️ 𝑹𝑨𝑹𝑰𝑻𝒀: {character['rarity']}\n"
             f"⚜️ 𝑨𝑵𝑰𝑴𝑬: {character['anime']}\n"
@@ -66,13 +66,13 @@ async def hclaim(_, message: t.Message):
 @bot.on_message(filters.command(["hfind"]))
 async def hfind(_, message: t.Message):
     if len(message.command) < 2:
-        return await message.reply_text("🔖𝑷𝒍𝒆𝒂𝒔𝒆 𝒑𝒓𝒐𝒗𝒊𝒅𝒆 𝒕𝒉𝒆 𝒘𝒂𝒊𝒇𝒖 𝑰𝑫 ☘️", quote=True)
+        return await message.reply_text("🔖𝑷𝒍𝒆𝒂𝒔𝒆 𝒑𝒓𝒐𝒗𝒊𝒅𝒆 𝒕𝒉𝒆 𝑰𝑫 ☘️", quote=True)
     
     waifu_id = message.command[1]
     waifu = await collection.find_one({'id': waifu_id})
     
     if not waifu:
-        return await message.reply_text("🎗️ 𝑵𝒐 𝒘𝒂𝒊𝒇𝒖 𝒇𝒐𝒖𝒏𝒅 𝒘𝒊𝒕𝒉 𝒕𝒉𝒂𝒕 𝑰𝑫 ❌", quote=True)
+        return await message.reply_text("🎗️ 𝑵𝒐  𝒇𝒐𝒖𝒏𝒅 𝒘𝒊𝒕𝒉 𝒕𝒉𝒂𝒕 𝑰𝑫 ❌", quote=True)
     
     # Get the top 10 users with the most of this waifu in the current chat
     top_users = await user_collection.aggregate([
@@ -97,7 +97,7 @@ async def hfind(_, message: t.Message):
     
     # Construct the caption
     caption = (
-        f"🧩 𝑾𝒂𝒊𝒇𝒖 𝑰𝒏𝒇𝒐𝒓𝒎𝒂𝒕𝒊𝒐𝒏:\n"
+        f"🧩 𝑰𝒏𝒇𝒐𝒓𝒎𝒂𝒕𝒊𝒐𝒏:\n"
         f"🪭 𝑵𝒂𝒎𝒆: {waifu['name']}\n"
 
 f"⚕️ 𝑹𝒂𝒓𝒊𝒕𝒚: {waifu['rarity']}\n"
