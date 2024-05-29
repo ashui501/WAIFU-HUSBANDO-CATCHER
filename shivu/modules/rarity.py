@@ -14,9 +14,9 @@ RARITY_MAP = {
     "3": "🟡 Legendary",
     "4": "🟢 Medium",
     "5": "💮 Limited",
-    "6": "🔮 Super Rare",
-    "7": "⚜️ Infinity Edition",
-    "8": "🏺 Legendary Edison"
+    "6": "🔮 Christmas",
+    "7": "🏀 Basketball",
+    "8": "⚽ Football"
 }
 
 selected_rarity = None
