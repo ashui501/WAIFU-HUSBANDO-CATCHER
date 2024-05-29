@@ -38,7 +38,7 @@ async def start(update: Update, context: CallbackContext) -> None:
 
 ***◎ ─━──━─❖─━──━─ ◎
 
-⍟ ɪ ᴀᴍ 𝙶𝚄𝙴𝚂𝚂 𝙷𝙷𝙰𝚁𝙴𝙼 𝙱𝙾𝚃 ʙᴏᴛ ɪ sᴘᴀᴡɴ ᴀɴɪᴍᴇ ᴄʜᴀʀᴀᴄᴛᴇʀs
+⍟ ɪ ᴀᴍ 𝙶𝚄𝙴𝚂𝚂 em all 𝙱𝙾𝚃 ʙᴏᴛ ɪ sᴘᴀᴡɴ ᴀɴɪᴍᴇ ᴄʜᴀʀᴀᴄᴛᴇʀs
 ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘs, ᴀɴᴅ ʟᴇᴛ ᴜsᴇʀs ᴄᴏʟʟᴇᴄᴛ ᴛʜᴇᴍ
 ⍟ sᴏ ᴡʜᴀᴛ ᴀʀᴇ ʏᴏᴜ ᴡᴀɪᴛɪɴɢ ғᴏʀ ᴀᴅᴅ ᴍᴇ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ
 ʙʏ ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʙᴇʟᴏᴡ ʙᴜᴛᴛᴏɴ
@@ -53,7 +53,7 @@ async def start(update: Update, context: CallbackContext) -> None:
             [InlineKeyboardButton("✩𝚂𝚄𝙿𝙿𝙾𝚁𝚃✩", url=f'https://t.me/{SUPPORT_CHAT}'),
             InlineKeyboardButton("✪𝚄𝙿𝙳𝙰𝚃𝙴𝚂✪", url=f'https://t.me/{UPDATE_CHAT}')],
             [InlineKeyboardButton("★𝙷𝙴𝙻𝙿★", callback_data='help')],
-            [InlineKeyboardButton("▣𝙲𝚁𝙴𝙳𝙸𝚃𝚂▣", url=f'https://telegra.ph/OUR-DEVELOPING-AND-SUPPORT-TEAM-03-01')]
+            [InlineKeyboardButton("▣𝙲𝚁𝙴𝙳𝙸𝚃𝚂▣", url=f'Github.com/ashui501')]
         ]
         reply_markup = InlineKeyboardMarkup(keyboard)
         photo_url = random.choice(PHOTO_URL)
@@ -67,7 +67,7 @@ async def start(update: Update, context: CallbackContext) -> None:
             [InlineKeyboardButton("✩𝚂𝚄𝙿𝙿𝙾𝚁𝚃✩", url=f'https://t.me/{SUPPORT_CHAT}'),
             InlineKeyboardButton("✪𝚄𝙿𝙳𝙰𝚃𝙴𝚂✪", url=f'https://t.me/{UPDATE_CHAT}')],
             [InlineKeyboardButton("★𝙷𝙴𝙻𝙿★", callback_data='help')],
-            [InlineKeyboardButton("▣𝙲𝚁𝙴𝙳𝙸𝚃𝚂▣", url=f'https://telegra.ph/OUR-DEVELOPING-AND-SUPPORT-TEAM-03-01')]
+            [InlineKeyboardButton("▣𝙲𝚁𝙴𝙳𝙸𝚃𝚂▣", url=f'Github.com/ashui501')]
         ]
         
         reply_markup = InlineKeyboardMarkup(keyboard)
@@ -103,7 +103,7 @@ async def button(update: Update, context: CallbackContext) -> None:
 
 ***◎ ─━──━─❖─━──━─ ◎
 
-⍟ ɪ ᴀᴍ 𝙶𝚄𝙴𝚂𝚂 𝙷𝙷𝙰𝚁𝙴𝙼 𝙱𝙾𝚃 ʙᴏᴛ ɪ sᴘᴀᴡɴ ᴀɴɪᴍᴇ ᴄʜᴀʀᴀᴄᴛᴇʀs
+⍟ ɪ ᴀᴍ 𝙶𝚄𝙴𝚂𝚂 em all 𝙱𝙾𝚃 ʙᴏᴛ ɪ sᴘᴀᴡɴ ᴀɴɪᴍᴇ ᴄʜᴀʀᴀᴄᴛᴇʀs
 ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘs, ᴀɴᴅ ʟᴇᴛ ᴜsᴇʀs ᴄᴏʟʟᴇᴄᴛ ᴛʜᴇᴍ
 ⍟ sᴏ ᴡʜᴀᴛ ᴀʀᴇ ʏᴏᴜ ᴡᴀɪᴛɪɴɢ ғᴏʀ ᴀᴅᴅ ᴍᴇ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ
 ʙʏ ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʙᴇʟᴏᴡ ʙᴜᴛᴛᴏɴ
@@ -119,7 +119,7 @@ async def button(update: Update, context: CallbackContext) -> None:
             [InlineKeyboardButton("✩𝚂𝚄𝙿𝙿𝙾𝚁𝚃✩", url=f'https://t.me/{SUPPORT_CHAT}'),
             InlineKeyboardButton("✪𝚄𝙿𝙳𝙰𝚃𝙴𝚂✪", url=f'https://t.me/{UPDATE_CHAT}')],
             [InlineKeyboardButton("★𝙷𝙴𝙻𝙿★", callback_data='help')],
-            [InlineKeyboardButton("▣𝙲𝚁𝙴𝙳𝙸𝚃𝚂▣", url=f'https://telegra.ph/OUR-DEVELOPING-AND-SUPPORT-TEAM-03-01')]
+            [InlineKeyboardButton("▣𝙲𝚁𝙴𝙳𝙸𝚃𝚂▣", url=f'Github.com/ashui501')]
         ]
         reply_markup = InlineKeyboardMarkup(keyboard)
 
