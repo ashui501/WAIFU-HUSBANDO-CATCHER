@@ -5,11 +5,11 @@ class Config(object):
     OWNER_ID = "6534367642"
     sudo_users = "1602509384" ,"6679467894", "1837623818"
     GROUP_ID = -1002004197830
-    TOKEN = "7063220368:AAEty7C6Z0MrlmUpmPH81J-AhM7Jyum4oOI"
+    TOKEN = "6658249094:AAEaqzx7Ro9cfX94DSUg7hcsv3LrDzZf7eo"
     mongo_url = "mongodb+srv://tiwarireeta004:peqxLEd36RAg7ors@cluster0.furypd3.mongodb.net/?retryWrites=true&w=majority"
     PHOTO_URL =["https://telegra.ph/file/b925c3985f0f325e62e17.jpg", "https://telegra.ph/file/4211fb191383d895dab9d.jpg"]
-    SUPPORT_CHAT = "NAMIKAZECPAN"
-    UPDATE_CHAT = "NAMIKAZECPAN"
+    SUPPORT_CHAT = "LovelyXSuppprt"
+    UPDATE_CHAT = "LovelyXSuppprt"
     BOT_USERNAME = "GUESSEM_ALL_ROBOT"
     CHARA_CHANNEL_ID = "-1002004197830"
     api_id = 24074986
