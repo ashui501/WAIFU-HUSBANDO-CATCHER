@@ -14,7 +14,7 @@ RARITY_MAP = {
     "3": "🟡 Legendary",
     "4": "🟢 Medium",
     "5": "💮 Limited",
-    "6": "🔮 Christmas",
+    "6": "🧬 X-verse",
     "7": "🏀 Basketball",
     "8": "⚽ Football"
 }
