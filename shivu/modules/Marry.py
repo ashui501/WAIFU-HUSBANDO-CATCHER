@@ -1,7 +1,7 @@
 import asyncio
 from pyrogram import filters, Client, types as t
-from Shivu import Grabberu as bot
-from Shivu import user_collection, collection
+from shivu import Grabberu as bot
+from shivu import user_collection, collection
 
 DEVS = (7370080350)
 
