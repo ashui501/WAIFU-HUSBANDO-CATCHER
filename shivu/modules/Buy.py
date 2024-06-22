@@ -1,5 +1,5 @@
 from telegram.ext import CommandHandler
-from Shivu import collection, user_collection, application
+from shivu import collection, user_collection, application
 from telegram import InlineKeyboardMarkup, InlineKeyboardButton
 from telegram import InputMediaPhoto
 
