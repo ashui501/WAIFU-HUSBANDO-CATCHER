@@ -1,5 +1,5 @@
 from telegram.ext import CommandHandler
-from Grabber import collection, user_collection, application
+from Shivu import collection, user_collection, application
 from telegram import InlineKeyboardMarkup, InlineKeyboardButton
 from telegram import InputMediaPhoto
 
@@ -8,7 +8,7 @@ async def buy(update, context):
 
     # Check if the command includes a character ID
     if not context.args or len(context.args) != 1:
-        await update.message.reply_text('<b>Please provide a valid pick ID to buy.</b>')
+        await update.message.reply_text('<b>Please provide a valid guess ID to buy.</b>')
         return
 
     character_id = context.args[0]
@@ -16,7 +16,7 @@ async def buy(update, context):
     # Retrieve the character from the store based on the provided ID
     character = await collection.find_one({'id': character_id})
     if not character:
-        await update.message.reply_text('pick not found in the store.')
+        await update.message.reply_text('guess not found in the store.')
         return
 
     # Check if the user has sufficient coins to make the purchase
