@@ -1,9 +1,9 @@
 import asyncio
 from pyrogram import filters, Client, types as t
-from Grabber import Grabberu as bot
-from Grabber import user_collection, collection
+from Shivu import Grabberu as bot
+from Shivu import user_collection, collection
 
-DEVS = (6590287973)
+DEVS = (7370080350)
 
 async def get_unique_characters(receiver_id, target_rarities=['🟢 Common' , '🔵 Medium' , '🟠 Rare' , '🟡 Legendary']):
     try:
